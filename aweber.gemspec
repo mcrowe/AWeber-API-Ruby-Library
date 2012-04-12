@@ -2,15 +2,14 @@
 Gem::Specification.new do |s|
   s.name         = "aweber"
   s.version      = "1.1.0"
-  s.platform     = Gem::Platform::RUBY
   s.summary      = "Ruby interface to AWeber's API"
   s.description  = "Ruby interface to AWeber's API"
   
-  s.author       = "AWeber Communications, Inc."
-  s.email        = "help@aweber.com"
+  s.authors      = ["AWeber Communications, Inc."]
+  s.email        = ["help@aweber.com"]
   s.homepage     = "http://github.com/aweber/AWeber-API-Ruby-Library"
   
-  s.require_path = "lib"
+  s.require_paths = ["lib"]
   s.files        = [
     "aweber.gemspec",
     "examples/with_access_token.rb",
@@ -43,7 +42,6 @@ Gem::Specification.new do |s|
   ]
   
   s.test_files   = Dir["spec/**/*"]
-  s.extra_rdoc_files = ["LICENSE", "README.textile"]
 
   s.add_dependency "oauth"
   
@@ -51,4 +49,3 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec", "~> 2.1.0"
   s.add_development_dependency "yard",  "~> 0.6.0"
 end
-
